@@ -7,7 +7,7 @@ oopy_dev-OOPY开源团队统一开发平台
 
 下面分别介绍各操作系统中的安装方法:
 
-### 1. Windows中的安装
+## 1. Windows中的安装
 
 >最低配置要求:
 >内存: >= 4G
@@ -19,7 +19,7 @@ oopy_dev-OOPY开源团队统一开发平台
 >CPU: m3
 >内存: 4G
 
-##### 1.1 安装终端软件-cmder
+### 1.1 安装终端软件-cmder
 
 >Cmder：
 >Cmder是一个Windows平台下的linux终端模拟器，自带了大量linux工具，比如 grep, curl(没有 wget)； 像vim, grep, tar, unzip, ssh, ls, bash, perl, git等。且完全版大小仅80多MB，非常小巧精悍。
@@ -32,7 +32,7 @@ oopy_dev-OOPY开源团队统一开发平台
 
 直接下载安装即可(``注:一定要下载full版本``)
 
-##### 2.2 安装虚拟机软件-VirtualBox
+### 2.2 安装虚拟机软件-VirtualBox
 
 >VirtualBox
 >Oracle VirtualBox是由德国InnoTek软件公司出品的虚拟机软件，现在则由甲骨文公司进行开发，是甲骨文公司xVM虚拟化平台技术的一部分。它提供用户在32位或64位的Windows、Solaris及Linux 操作系统上虚拟其它x86的操作系统。用户可以在VirtualBox上安装并且运行Solaris、Windows、DOS、Linux、OS/2 Warp、OpenBSD及FreeBSD等系统作为客户端操作系统[1]。
@@ -50,7 +50,7 @@ https://www.virtualbox.org/
 下载完成后，一路next,yew，即可进行安装。
 
 
-##### 2.3 安装虚拟机插件-VirtualBox Extension Pack
+### 2.3 安装虚拟机插件-VirtualBox Extension Pack
 >由于VirtualBox中默认没有安装USB扩展，所以需要安装Extension Pack进行安装。
 
 ``注：``此步骤需在2.2安装完成后进行。
@@ -63,7 +63,7 @@ https://www.virtualbox.org/
 
 下载完成后，默认安装即可。
 
-##### 2.4 安装虚拟化工具-Vagrant
+### 2.4 安装虚拟化工具-Vagrant
 
 >Vagrant
 >Vagrant是一款用于构建及配置虚拟开发环境的软件，基于Ruby,主要以命令行的方式运行。
@@ -79,7 +79,7 @@ https://www.virtualbox.org/
 ```
 完成最后一步后，会要求重启，按要求重启即可。
 ```
-##### 2.5 Clone 项目代码到本地
+### 2.5 Clone 项目代码到本地
 
 打开Cmder，执行如下命令，切换到C盘根目录。
 ```
@@ -93,7 +93,7 @@ clone完成后，C盘根目录下就会出现名称为oopy_dev的文件夹。
 
 从下面的链接中，oopy_dev.box到oopy_dev中。
 
->NULL
+>链接: https://pan.baidu.com/s/1o7AKCmY 密码: j9a1
 文件较大，请保存耐心。
 
 下载完成后，在Cmder中进入oopy_dev文件夹:
@@ -104,10 +104,10 @@ cd oopy_dev
 此时输入ls 会列举该文件夹中存在的文件，如下图:
 ```
 ls
-待补充
+>README.md Vagrantfile assets/ oopy_dev.box oopy_share/
 ```
 
-##### 2.6 初始化并启动运行环境
+### 2.6 初始化并启动运行环境
 
 
 首先将oopy_dev.box添加到本地box列表中。
@@ -133,7 +133,7 @@ vagrant ssh
 >其中Vagrant: vagrant reload
 >再次进入Vagrant: vagrant ssh
 
-##### 2.7 写一个Hello world
+### 2.7 写一个Hello world
 
 使用``vagrant ssh``登陆进入Ubuntu系统:
 
@@ -160,19 +160,17 @@ gcc main.c -o hello
 ``PS:``关于vim的使用，先预览此篇，高级技巧请自行Google:-D
 >http://coolshell.cn/articles/5426.html
 
-### 2 Macosx 上的安装
+## 2 Macosx 上的安装
 
 待补充
 
-### 3 Ubuntu 上的安装
+## 3 Ubuntu 上的安装
 
 待补充
 
-### 4 后续
+## 4 后续
 后续会介绍，如何使用git工具，如何在该环境下编译STM32程序，以及如何参与开源项目。
 
 >关于我们
 >Infinite && Python
 >我们是OOPY硬件开源团队，专注于物联网与人工智能。
-
-![logo](/assets/logo.png)
