@@ -106,7 +106,9 @@ cd oopy_dev
 ls
 >README.md Vagrantfile assets/ oopy_dev.box oopy_share/
 ```
-
+>学习资料
+> <<猴子都能懂得GIT入门>>
+http://backlogtool.com/git-guide/cn/
 ### 2.6 初始化并启动运行环境
 
 
